@@ -1,0 +1,61 @@
+/**
+ * Plugin CKEditor GMap
+ * Copyright (c) <2015> <Jacques Malgrange contacter@boiteasite.fr>
+ * License MIT
+ */
+CKEDITOR.dialog.add('gmapDialog',function(editor){
+	var lang=editor.lang.gmap;
+	return{
+		title:lang.buttonGmap,
+		minWidth:250,
+		minHeight:75,
+		contents:[{
+			id:'gmap0',
+			label:'',
+			title:'',
+			expand:false,
+			padding:0,
+			elements:[{
+				type:'text',
+				id:'loc',
+				label:lang.labelLoc,
+				commit:function(widget){widget.setData('loc',this.getValue());},
+				setup:function(widget){this.setValue(widget.data.loc);}
+ 			},{
+				type:'text',
+				id:'wid',
+				label:lang.labelWid,
+				'default':'360',
+				style:'width:50px;margin-top:5px;',
+				commit:function(widget){widget.setData('wid',this.getValue());},
+				setup:function(widget){this.setValue(widget.data.wid);}
+			},{
+				type:'text',
+				id:'hei',
+				label:lang.labelHei,
+				'default':'240',
+				style:'width:50px;margin-top:5px;',
+				commit:function(widget){widget.setData('hei',this.getValue());},
+				setup:function(widget){this.setValue(widget.data.hei);}
+			},{
+				type:'select',
+				id:'zoo',
+				label:lang.labelZoo,
+				items:[['1'],['2'],['3'],['4'],['5'],['6'],['7'],['8'],['9'],['10'],['11'],['12'],['13'],['14'],['15'],['16'],['17'],['18'],['19'],['20']],
+				'default':'14',
+				style:'margin-top:5px;',
+				commit:function(widget){widget.setData('zoo',this.getValue());},
+				setup:function(widget){this.setValue(widget.data.zoo);}
+			},{
+				type:'select',
+				id:'map',
+				label:lang.labelMap,
+				items:[[lang.normal],[lang.satellite],[lang.hybrid],[lang.terrain]],
+				'default':lang.normal,
+				style:'margin-top:5px;',
+				commit:function(widget){widget.setData('map',this.getValue());},
+				setup:function(widget){this.setValue(widget.data.map);}
+			}]
+		}]
+	};
+});
