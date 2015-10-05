@@ -24,3 +24,5 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
 ### GoogleMap ###
 
 Adds a button in CKEditor to insert one or more Google-Map in your page.
+
+[CMSUno](https://github.com/boiteasite/cmsuno)
