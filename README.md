@@ -21,8 +21,13 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
      \____/           \/    \/            \__/
 </pre>
 
-### GoogleMap ###
+## GoogleMap ##
 
 Adds a button in CKEditor to insert one or more Google-Map in your page.
 
 [CMSUno](https://github.com/boiteasite/cmsuno)
+
+### Versions ###
+
+* 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext
+* 1.0 - 05/10/2015 : First stable version

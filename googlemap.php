@@ -14,9 +14,9 @@ if (isset($_POST['action']))
 		// ********************************************************************************************
 		case 'plugin': ?>
 		<div class="blocForm">
-			<h2><?php echo _("GoogleMap");?></h2>
-			<p><?php echo _("This plugin allows you to insert one or more GoogleMap in your page.");?></p>
-			<p><?php echo _("It is used with the button") .'<img src="uno/plugins/googlemap/gmap/icons/gmap.png" style="border:1px solid #aaa;padding:3px;margin:0 6px -5px;border-radius:2px;" />' . _("added to the text editor when the plugin is enabled."); ?></p>
+			<h2><?php echo T_("GoogleMap");?></h2>
+			<p><?php echo T_("This plugin allows you to insert one or more GoogleMap in your page.");?></p>
+			<p><?php echo T_("It is used with the button") .'<img src="uno/plugins/googlemap/gmap/icons/gmap.png" style="border:1px solid #aaa;padding:3px;margin:0 6px -5px;border-radius:2px;" />' . T_("added to the text editor when the plugin is enabled."); ?></p>
 			<div class="clear"></div>
 		</div>
 		<?php break;
